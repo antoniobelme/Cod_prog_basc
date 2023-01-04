@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Trasnferencia Bancaria
+        </title>
+    </head>
+    <body>
+        <form id="formulario">
+            <label for="nombreCliente">Digite su nombre:</label> <br/>
+            <input type="text" id="nombreCliente" /><br/>
+
+            <label for="cuentaCliente">Digite su número de Cuenta:</label> <br/>
+            <input type="number" id="cuentaCliente" /><br/>
+
+            <label for="saldo">Digite su Saldo:</label> <br/>
+            <input type="number" id="saldo" /><br/>
+
+            <label for="cuentaDestino">Digite el número de Cuenta del Destinatario:</label> <br/>
+            <input type="number" id="cuentaDestino" /><br/>
+
+            <label for="transferencia">Digite el valor a transferir:</label><br/>
+            <input type="number" id="transferencia" /><br/>
+
+            <label for="bancoDestino">Digite el Banco de destino: </label><br/>
+            <input type="text" id="bancoDestino" /><br/>
+
+            <label for="hora">Seleccione el rango de tiempo en el que realiza la transferencia: </label><br/>
+            <select name="horaRango" id="hora">
+                <option value="1"> 8 a 9 am</option>
+                <option value="2"> 9 a 10 am</option>
+                <option value="3"> 10 a 11 am</option>
+                <option value="4"> 11 a 12 m</option>
+                <option value="5"> 12 a 1 pm</option>
+                <option value="6"> 1 a 2 pm</option>
+                <option value="7"> 2 a 3 pm</option>
+                <option value="8"> 3 a 4 pm</option>
+                <option value="9"> 4 a 5 pm</option>
+            </select>
+            <input type="button" value="Transferir" id="transferir" />
+        </form>
+        <p id="parrafo1"></p>
+        <p id="parrafo2"></p>
+        <script src="Transferencia_1.js"></script>
+    </body>
+</html>
